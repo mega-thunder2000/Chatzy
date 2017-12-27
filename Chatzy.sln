@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chatzy", "Chatzy\Chatzy.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LDAP", "LDAP\LDAP.csproj", "{C1AC6785-6921-4526-B533-EF943691833E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chaos", "Chaos\Chaos.csproj", "{F1C6396A-23D1-4A72-9BB0-B365F1B4F4ED}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{C1AC6785-6921-4526-B533-EF943691833E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C1AC6785-6921-4526-B533-EF943691833E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C1AC6785-6921-4526-B533-EF943691833E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1C6396A-23D1-4A72-9BB0-B365F1B4F4ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1C6396A-23D1-4A72-9BB0-B365F1B4F4ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1C6396A-23D1-4A72-9BB0-B365F1B4F4ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1C6396A-23D1-4A72-9BB0-B365F1B4F4ED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
