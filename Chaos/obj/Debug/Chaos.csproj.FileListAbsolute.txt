@@ -1,0 +1,6 @@
+C:\Users\root\Documents\Visual Studio 2017\Projects\Chatzy\Chaos\bin\Debug\Chaos.exe.config
+C:\Users\root\Documents\Visual Studio 2017\Projects\Chatzy\Chaos\bin\Debug\Chaos.exe
+C:\Users\root\Documents\Visual Studio 2017\Projects\Chatzy\Chaos\bin\Debug\Chaos.pdb
+C:\Users\root\Documents\Visual Studio 2017\Projects\Chatzy\Chaos\obj\Debug\Chaos.csprojResolveAssemblyReference.cache
+C:\Users\root\Documents\Visual Studio 2017\Projects\Chatzy\Chaos\obj\Debug\Chaos.exe
+C:\Users\root\Documents\Visual Studio 2017\Projects\Chatzy\Chaos\obj\Debug\Chaos.pdb

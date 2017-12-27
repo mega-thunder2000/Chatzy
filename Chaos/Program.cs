@@ -12,27 +12,35 @@ namespace Chaos
     {
         static void Main(string[] args)
         {
-
+            Send("chou0015@stthomas.edu", "UST-GRADS", "test", "test", new List<string>() { "chou0015@stthomas.edu" });
         }
 
-        static void Send(string spoofedAddress, string body, string subject, List<string> Recipients)
+        static void Send(string spoofedAddress, string spoofedName, string body, string subject, List<string> Recipients)
         {
-            using (var message = new MailMessage())
+            try
             {
-                Recipients.ForEach(Recipient => message.Bcc.Add(Recipient));
-                message.From = new MailAddress("spoofed@ust.edu", spoofedAddress);
-                message.Subject = subject;
-                message.Body = body;
-                message.IsBodyHtml = true;
-
-                var client = new SmtpClient()
+                using (var message = new MailMessage())
                 {
-                    Timeout = 30000,
-                    Credentials = new NetworkCredential(),
-                    EnableSsl = false
-                };
+                    Recipients.ForEach(Recipient => message.Bcc.Add(Recipient));
+                    message.From = new MailAddress(spoofedAddress, spoofedName);
+                    message.Subject = subject;
+                    message.Body = body;
+                    message.IsBodyHtml = true;
 
-                client.Send(message);
+                    var client = new SmtpClient("smtp.stthomas.edu", 587)
+                    {
+                        Timeout = 30000,
+                        Credentials = new NetworkCredential("chou0015", "Stthomas1"),
+                        EnableSsl = true
+                    };
+
+                    client.Send(message);
+                }
+            }
+            catch (Exception ex)
+            {
+
+                throw;
             }
         }
     }

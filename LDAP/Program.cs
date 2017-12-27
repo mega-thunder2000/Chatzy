@@ -30,7 +30,7 @@ namespace LDAP
                     {
                         sw.WriteLine("\t {0}", property);
 
-                        foreach (var item in sr.Properties[property])
+                        foreach (var item in sr.Properties[property].Cast<object>().OrderBy(ch => ch))
                         {
                             sw.WriteLine("\t\t" + item);
                         }
