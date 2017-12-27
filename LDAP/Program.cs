@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.DirectoryServices;
+﻿using System.DirectoryServices;
 using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace LDAP
 {
@@ -20,15 +16,29 @@ namespace LDAP
 
             DirectorySearcher ds = new DirectorySearcher(de)
             {
-                //Filter = "(&(pwdLastSet=*)(displayName=*))",
                 PageSize = int.MaxValue
             }; 
-            //ds.PropertiesToLoad.AddRange(new string[] { "displayName", "cn" });
             var groups = ds.FindAll();
 
-            foreach (SearchResult sr in groups)
+            using (StreamWriter sw = new StreamWriter("LDAP__UST_Distribution_Groups.txt"))
             {
-                //File.AppendAllText("UST_LDAP_GROUPS.csv", string.Format("{0},{1}@stthomas.edu\n", sr.Properties["displayName"][0].ToString(), sr.Properties["cn"][0].ToString()));
+                foreach (SearchResult sr in groups)
+                {
+                    sw.WriteLine(string.Format("Path: {0}", sr.Path));
+
+                    foreach (string property in sr.Properties.PropertyNames.Cast<string>().OrderBy(ch => ch))
+                    {
+                        sw.WriteLine("\t {0}", property);
+
+                        foreach (var item in sr.Properties[property])
+                        {
+                            sw.WriteLine("\t\t" + item);
+                        }
+                    }
+
+                    sw.WriteLine();
+                    //File.AppendAllText("UST_LDAP_GROUPS.csv", string.Format("{0},{1}@stthomas.edu\n", sr.Properties["displayName"][0].ToString(), sr.Properties["cn"][0].ToString()));
+                }
             }
         }
     }
