@@ -1,0 +1,6 @@
+C:\Users\root\Documents\Visual Studio 2017\Projects\Chatzy\LDAP\bin\Debug\LDAP.exe.config
+C:\Users\root\Documents\Visual Studio 2017\Projects\Chatzy\LDAP\bin\Debug\LDAP.exe
+C:\Users\root\Documents\Visual Studio 2017\Projects\Chatzy\LDAP\bin\Debug\LDAP.pdb
+C:\Users\root\Documents\Visual Studio 2017\Projects\Chatzy\LDAP\obj\Debug\LDAP.csprojResolveAssemblyReference.cache
+C:\Users\root\Documents\Visual Studio 2017\Projects\Chatzy\LDAP\obj\Debug\LDAP.exe
+C:\Users\root\Documents\Visual Studio 2017\Projects\Chatzy\LDAP\obj\Debug\LDAP.pdb

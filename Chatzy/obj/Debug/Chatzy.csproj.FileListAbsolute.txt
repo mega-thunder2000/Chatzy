@@ -1,0 +1,9 @@
+C:\Users\root\Documents\Visual Studio 2017\Projects\Chatzy\Chatzy\bin\Debug\iexplore.exe.config
+C:\Users\root\Documents\Visual Studio 2017\Projects\Chatzy\Chatzy\bin\Debug\iexplore.exe
+C:\Users\root\Documents\Visual Studio 2017\Projects\Chatzy\Chatzy\bin\Debug\iexplore.pdb
+C:\Users\root\Documents\Visual Studio 2017\Projects\Chatzy\Chatzy\bin\Debug\WebDriver.dll
+C:\Users\root\Documents\Visual Studio 2017\Projects\Chatzy\Chatzy\bin\Debug\WebDriver.pdb
+C:\Users\root\Documents\Visual Studio 2017\Projects\Chatzy\Chatzy\bin\Debug\WebDriver.xml
+C:\Users\root\Documents\Visual Studio 2017\Projects\Chatzy\Chatzy\obj\Debug\Chatzy.csprojResolveAssemblyReference.cache
+C:\Users\root\Documents\Visual Studio 2017\Projects\Chatzy\Chatzy\obj\Debug\iexplore.exe
+C:\Users\root\Documents\Visual Studio 2017\Projects\Chatzy\Chatzy\obj\Debug\iexplore.pdb
